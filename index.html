@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UmarBot | A project by Umar</title>
+  <meta name="description" content="UmarBot is an AI chatbot assistant built by Umar. Try it live and get in touch.">
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Umar<span>Bot</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#tech">Tech Stack</a>
+        <a href="#about">About me</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="btn btn-primary nav-cta" data-open-chat>Try UmarBot</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-text fade-in">
+        <span class="badge">A project by Umar</span>
+        <h1>Meet <span class="highlight">UmarBot</span>, My AI Chatbot Assistant</h1>
+        <p>Hi, I'm Umar, an AI chatbot developer. I build custom chatbots for Websites and Businesses that answer customer questions, handle support and capture leads around the clock. UmarBot is a live demo of my work. Try it and see what it can do for your business.</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" data-open-chat>Chat with UmarBot</button>
+          <a href="#about" class="btn btn-outline">About me</a>
+        </div>
+        <div class="stats">
+          <div><strong>24/7</strong><span>Always online</span></div>
+          <div><strong>Instant</strong><span>Fast replies</span></div>
+          <div><strong>Umar</strong><span>Built by me</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual fade-in">
+        <div class="mock-chat">
+          <div class="mock-header"><span class="dot"></span> UmarBot <small>Online</small></div>
+          <div class="mock-body">
+            <div class="msg bot">Hi! I'm UmarBot. How can I help you today?</div>
+            <div class="msg user">Who built you?</div>
+            <div class="msg bot">I was built by Umar. Ask me anything!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head fade-in">
+        <h2>What UmarBot can do</h2>
+        <p>A smart assistant designed to give fast and helpful answers.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card fade-in">
+          <div class="icon">&#9889;</div>
+          <h3>Instant Replies</h3>
+          <p>Get answers in seconds, any time of day.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="icon">&#129504;</div>
+          <h3>Smart Understanding</h3>
+          <p>Understands natural questions and replies in a human way.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="icon">&#128172;</div>
+          <h3>Easy to Use</h3>
+          <p>A clean chat window that anyone can use without training.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="icon">&#128241;</div>
+          <h3>Works on Any Device</h3>
+          <p>Looks and works great on phones, tablets and desktops.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="icon">&#9881;</div>
+          <h3>Customizable</h3>
+          <p>Can be adapted to different topics, tones and use cases.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="icon">&#128274;</div>
+          <h3>Safe &amp; Reliable</h3>
+          <p>Built with care so conversations stay simple and secure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section alt" id="how">
+    <div class="container">
+      <div class="section-head fade-in">
+        <h2>How it works</h2>
+        <p>Three simple steps and you are chatting.</p>
+      </div>
+      <div class="steps">
+        <div class="step fade-in">
+          <span class="num">1</span>
+          <h3>Open the chat</h3>
+          <p>Click the "Try UmarBot" button at the top of the page.</p>
+        </div>
+        <div class="step fade-in">
+          <span class="num">2</span>
+          <h3>Ask anything</h3>
+          <p>Type your question just like talking to a person.</p>
+        </div>
+        <div class="step fade-in">
+          <span class="num">3</span>
+          <h3>Get your answer</h3>
+          <p>UmarBot replies instantly with helpful information.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="section" id="tech">
+    <div class="container">
+      <div class="section-head fade-in">
+        <h2>What's inside UmarBot</h2>
+        <p>A look behind the scenes at the n8n workflow that powers this chatbot.</p>
+      </div>
+
+      <div class="flow fade-in">
+        <span>Website Chat</span><i>&rsaquo;</i>
+        <span>Chat Trigger</span><i>&rsaquo;</i>
+        <span>AI Agent</span><i>&rsaquo;</i>
+        <span>Memory + Knowledge Base + Tools</span><i>&rsaquo;</i>
+        <span>Instant Reply</span>
+      </div>
+
+      <div class="grid-3">
+        <div class="card fade-in">
+          <div class="icon">&#128268;</div>
+          <h3>Chat Trigger</h3>
+          <p>Receives every message from the website chat and starts the workflow instantly.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="icon">&#129504;</div>
+          <h3>AI Agent</h3>
+          <p>The brain of the bot. It understands the question, decides what to do and writes the reply.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="icon">&#10024;</div>
+          <h3>Language Model</h3>
+          <p>Generates natural, human-like answers in the right tone for your business.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="icon">&#128190;</div>
+          <h3>Memory</h3>
+          <p>Remembers the conversation so follow-up questions make sense and feel natural.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="icon">&#128218;</div>
+          <h3>Knowledge Base</h3>
+          <p>Answers from your own data, like FAQs, documents and sheets, instead of guessing.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="icon">&#128736;</div>
+          <h3>Tools &amp; Integrations</h3>
+          <p>Connects to apps like Google Sheets, email or a CRM to take real actions, such as saving leads.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO CTA -->
+  <section class="section" id="demo">
+    <div class="container">
+      <div class="cta-box fade-in">
+        <h2>Want to see it in action?</h2>
+        <p>Open UmarBot and ask it a question right now.</p>
+        <button class="btn btn-light" data-open-chat>Start Live Demo</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME -->
+  <section class="section alt" id="about">
+    <div class="container about-wrap">
+      <div class="about-avatar fade-in">U</div>
+      <div class="about-text fade-in">
+        <h2>Hi, I'm Umar</h2>
+        <p>I'm an AI chatbot and automation developer. I help businesses save time and serve customers better by building custom chatbots, AI automations and smart workflows that run around the clock.</p>
+        <p>From answering customer questions and capturing leads to automating repetitive tasks, I turn manual work into reliable automated systems. UmarBot is a live example of what I build. If you have an idea or a process you want to automate, let's talk.</p>
+        <div class="tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>AI Chatbot</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container contact-wrap">
+      <div class="section-head fade-in left">
+        <h2>Let's work together</h2>
+        <p>Like what you see? Send me a message and I'll get back to you.</p>
+        <div class="social-links">
+          <a href="mailto:hiumar937@gmail.com">Email</a>
+          <a href="https://wa.me/923036937172" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <p class="contact-email">
+          Email: <a href="mailto:hiumar937@gmail.com" id="footerEmail">hiumar937@gmail.com</a>
+          <button type="button" class="copy-btn" id="copyEmailBtn">Copy</button>
+        </p>
+      </div>
+      <form class="contact-form fade-in" id="contactForm">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+        <!-- Spam se bachne ke liye (isko mat chhedna) -->
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="_subject" value="New message from your UmarBot portfolio">
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit" class="btn btn-primary" id="formBtn">Send Message</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Umar. Built with UmarBot.</p>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       CHATBOT WIDGET
+       Apna chatbot yahan lagao: neeche wale
+       <div id="chatbot-mount"> ke andar apna
+       iframe ya chatbot ka embed code paste karo.
+       ============================================ -->
+  <button class="chat-launcher" id="chatLauncher" aria-label="Open chat">
+    <svg class="icon-chat" viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+      <path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
+    </svg>
+    <svg class="icon-close" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+      <path d="M6 6l12 12M18 6L6 18"/>
+    </svg>
+  </button>
+
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-window-header">
+      <div class="chat-head-info">
+        <div class="chat-avatar">&#129302;</div>
+        <div class="chat-head-text">
+          <strong>UmarBot</strong>
+          <small><span class="dot"></span> Online now</small>
+        </div>
+      </div>
+      <button id="chatClose" aria-label="Close chat">&times;</button>
+    </div>
+    <!-- n8n chatbot isi box ke andar load hota hai -->
+    <div class="chat-window-body" id="chatbot-mount"></div>
+  </div>
+
+  <!-- ============================================
+       n8n CHATBOT EMBED CODE
+       YOUR_PRODUCTION_WEBHOOK_URL ki jagah apna
+       n8n Production Webhook URL paste karo.
+       ============================================ -->
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+      webhookUrl: 'https://umarbot.app.n8n.cloud/webhook/a8212c1e-bdeb-4981-a520-f94e852668c3/chat',
+      mode: 'fullscreen',
+      target: '#chatbot-mount',
+      showWelcomeScreen: false,
+      initialMessages: [
+        "Hi! I'm UmarBot. 👋",
+        "How can I help you today?"
+      ],
+      i18n: {
+        en: {
+          title: 'UmarBot',
+          subtitle: '',
+          footer: '',
+          getStarted: 'New Conversation',
+          inputPlaceholder: 'Type your question...'
+        }
+      }
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
